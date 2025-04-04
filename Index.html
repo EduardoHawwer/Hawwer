@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aprendendo Programação em 1 Minuto</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+      background: url('https://i.postimg.cc/nLQLs74v/261e9ecf07e2f086bf4fe0058cfc9fe9-high.webp') no-repeat center center fixed;
+      background-size: cover;
+      margin: 0;
+      padding-top: 150px;
+    }
+
+    .header {
+      background: black;
+      color: white;
+      padding: 10px;
+      font-size: 20px;
+      font-weight: bold;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Share Tech Mono', monospace;
+      animation: pulseText 2s infinite;
+    }
+
+    @keyframes pulseText {
+      0%, 100% { text-shadow: 0 0 5px #fff, 0 0 10px #00ffcc, 0 0 20px #00ffcc; }
+      50% { text-shadow: 0 0 10px #fff, 0 0 15px #00ffcc, 0 0 30px #00ffcc; }
+    }
+
+    .search-box {
+      position: fixed;
+      top: 80px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 5px;
+      border-radius: 30px;
+      width: 85%;
+      max-width: 400px;
+      z-index: 999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 10px;
+      border: 2px solid #ccc;
+      border-radius: 30px;
+      font-size: 16px;
+      outline: none;
+      text-align: center;
+      background: white;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: auto;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 15px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      margin-top: 120px;
+    }
+
+    h1 {
+      color: #333;
+      opacity: 0;
+      animation: fadeIn 1.5s forwards;
+      text-align: center;
+    }
+
+    p {
+      color: #666;
+      text-align: left;
+      font-size: 14px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 10px;
+      background: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 20px;
+      transition: background 0.5s ease-in-out;
+      opacity: 0;
+      animation: fadeIn 2s forwards;
+    }
+
+    .btn:hover {
+      background: #0056b3;
+    }
+
+    .course-image {
+      width: 100%;
+      border-radius: 15px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">Programação em 1 Minuto</div>
+  <div class="search-box">
+    <input type="text" placeholder="Pesquisar aulas... (Ex: JavaScript)">
+  </div>
+  <div class="container">
+    <img src="https://i.postimg.cc/nLQLs74v/261e9ecf07e2f086bf4fe0058cfc9fe9-high.webp" alt="Capa do Curso" class="course-image">
+    <h1>Dia 01 - Introdução ao JavaScript e Lógica de Programação Básica</h1>
+    <p>
+      Neste primeiro dia, vamos entender:
+      <ul>
+        <li>O que é JavaScript e como ele funciona.</li>
+        <li>A sintaxe básica do JavaScript, como declarar variáveis e usar operadores.</li>
+        <li>Como tomar decisões em um programa com estruturas condicionais (<code>if</code>, <code>else</code>).</li>
+      </ul>
+    </p>
+    <a href="https://ouo.io/seu-link-aqui" class="btn">Acessar Aula</a>
+  </div>
+</body>
+</html>
